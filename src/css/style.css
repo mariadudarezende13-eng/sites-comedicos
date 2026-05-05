@@ -1,0 +1,77 @@
+    body{
+    background-image: url('../img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-total{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.area-selecao .img{
+    width: 120px;
+    height: 125px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    filter: grayscale(50);
+    transition: .9s ease-in-out;
+}
+
+.area-selecao .img:hover{
+    border: 3px solid #a679cf;
+    filter: grayscale(0);
+    cursor: pointer;
+}
+
+
+
+.area-total-carta{
+    width: 35%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.area-carta{
+    height: 700px;
+    width: 540px;
+    background-color: #fff;
+    background-image: url('../img/fundo2.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #a679cf;
+    padding: 40px;
+    border-radius: 18px;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.area-carta-top.visible{
+    opacity: 1;
+    z-index: 1;
+}
+
+.area-carta.visible{
+    opacity: 1;
+    z-index: 1;
+}
+.area-carta .preco{
+    font-size: 16px;
+}
+
+
+
+
